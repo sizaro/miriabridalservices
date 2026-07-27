@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer>
-      Footer
+      <p>© {new Date().getFullYear()} Miriam Bridal Services</p>
     </footer>
   );
 };

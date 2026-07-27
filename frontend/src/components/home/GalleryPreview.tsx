@@ -1,0 +1,30 @@
+import { motion } from 'framer-motion';
+
+const galleryItems = [
+  { title: 'Soft glam', image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80' },
+  { title: 'Luxury lookbook', image: 'https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=900&q=80' },
+  { title: 'Wedding detail styling', image: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80' },
+];
+
+const GalleryPreview = () => {
+  return (
+    <motion.section id="gallery" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.6 }} className="bg-white py-20">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="max-w-2xl">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#8b5e3c]">Gallery</p>
+          <h2 className="mt-4 text-3xl font-semibold text-stone-900 sm:text-4xl">A visual glimpse into elegant bridal beauty and refined details.</h2>
+        </div>
+        <div className="mt-10 grid gap-6 md:grid-cols-3">
+          {galleryItems.map((item, index) => (
+            <motion.div key={item.title} initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4, delay: index * 0.06 }} className="overflow-hidden rounded-[2rem] border border-stone-200 bg-white shadow-sm">
+              <img src={item.image} alt={item.title} className="h-[260px] w-full object-cover" />
+              <div className="p-5"><h3 className="text-lg font-semibold text-stone-900">{item.title}</h3></div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </motion.section>
+  );
+};
+
+export default GalleryPreview;
