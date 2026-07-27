@@ -1,31 +1,84 @@
 import {
-  AboutSection,
-  ContactSection,
-  GallerySection,
   HeroSection,
-  PackagesSection,
-  ProcessSection,
-  ServicesSection,
-  StatsSection,
+  PromotionBanner,
+  AboutPreview,
+  ServicesPreview,
+  HowWeWorkSection,
+  ConsultationPreview,
+  PackagesPreview,
+  PaymentOptionsPreview,
+  RecentWorkSection,
+  PortfolioPreview,
+  GalleryPreview,
+  WhyChooseUs,
   TestimonialsSection,
   TrainingPreview,
-  WhyChooseUs,
-} from '../../components/home';
+  TeamPreview,
+  UpcomingEventsSection,
+  AvailabilitySection,
+  BlogPreview,
+  CommunicationSection,
+  BookingCTA,
+} from "../../components/home";
 
 const Home = () => {
   return (
     <main>
+      {/* First Impression */}
       <HeroSection />
-      <AboutSection />
-      <ServicesSection />
+
+      {/* Current Offers / Marketing */}
+      <PromotionBanner />
+
+      {/* Brand Introduction */}
+      <AboutPreview />
+
+      {/* What We Offer */}
+      <ServicesPreview />
+
+      {/* Customer Journey */}
+      <HowWeWorkSection />
+
+      {/* Consultation Process */}
+      <ConsultationPreview />
+
+      {/* Pricing & Packages */}
+      <PackagesPreview />
+
+      {/* Payment Information */}
+      <PaymentOptionsPreview />
+
+      {/* Proof of Work */}
+      <RecentWorkSection />
+
+      <PortfolioPreview />
+
+      <GalleryPreview />
+
+      {/* Trust Building */}
       <WhyChooseUs />
-      <GallerySection />
-      <TrainingPreview />
-      <ProcessSection />
-      <StatsSection />
-      <PackagesSection />
+
       <TestimonialsSection />
-      <ContactSection />
+
+      {/* Additional Business Arm */}
+      <TrainingPreview />
+
+      {/* People Behind The Brand */}
+      <TeamPreview />
+
+      {/* Events & Availability */}
+      <UpcomingEventsSection />
+
+      <AvailabilitySection />
+
+      {/* Content Marketing */}
+      <BlogPreview />
+
+      {/* Communication Channels */}
+      <CommunicationSection />
+
+      {/* Final Conversion */}
+      <BookingCTA />
     </main>
   );
 };

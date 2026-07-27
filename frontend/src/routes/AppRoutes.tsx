@@ -14,6 +14,7 @@ const AppRoutes = () => {
   return (
     <BrowserRouter>
       <Routes>
+        {/* Public Website */}
         <Route element={<PublicLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -21,8 +22,17 @@ const AppRoutes = () => {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/packages" element={<Packages />} />
           <Route path="/contact" element={<Contact />} />
+
+          {/* Future pages */}
+          {/* 
+          <Route path="/training" element={<Training />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/booking" element={<Booking />} />
+          */}
         </Route>
 
+        {/* 404 */}
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
