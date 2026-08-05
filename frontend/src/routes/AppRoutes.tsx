@@ -6,6 +6,7 @@ import Home from "../pages/Home";
 import About from "../pages/About";
 import Services from "../pages/Services";
 import Gallery from "../pages/Gallery";
+import Portfolio from "../pages/Portfolio";
 import Packages from "../pages/Packages";
 import Contact from "../pages/Contact";
 import NotFound from "../pages/NotFound";
@@ -20,6 +21,7 @@ const AppRoutes = () => {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/packages" element={<Packages />} />
           <Route path="/contact" element={<Contact />} />
 
