@@ -1,5 +1,26 @@
+import {
+  PackagesHeroSection,
+  PackagesPricingSection,
+  PackagesPoliciesSection,
+  PackagesBrandStrip,
+} from "../../components/packages";
+
 const Packages = () => {
-  return <h1>Packages Page</h1>;
+  return (
+    <main>
+      {/* Packages hero */}
+      <PackagesHeroSection />
+
+      {/* Pricing cards */}
+      <PackagesPricingSection />
+
+      {/* Policies and CTA */}
+      <PackagesPoliciesSection />
+
+      {/* Final brand strip */}
+      <PackagesBrandStrip />
+    </main>
+  );
 };
 
 export default Packages;

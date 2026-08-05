@@ -1,5 +1,26 @@
+import {
+  ContactHeroSection,
+  ContactChannelsSection,
+  ContactInquirySection,
+  ContactAssuranceStrip,
+} from "../../components/contact";
+
 const Contact = () => {
-  return <h1>Contact Page</h1>;
+  return (
+    <main>
+      {/* Contact hero */}
+      <ContactHeroSection />
+
+      {/* Contact channels */}
+      <ContactChannelsSection />
+
+      {/* Inquiry and process */}
+      <ContactInquirySection />
+
+      {/* Assurance strip */}
+      <ContactAssuranceStrip />
+    </main>
+  );
 };
 
 export default Contact;
