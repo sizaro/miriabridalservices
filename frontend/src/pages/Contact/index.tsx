@@ -1,8 +1,18 @@
 import {
   ContactHeroSection,
-  ContactChannelsSection,
-  ContactInquirySection,
-  ContactAssuranceStrip,
+  PreferredMethodsSection,
+  WhatsAppConsultationSection,
+  PhoneConsultationSection,
+  EmailCommunicationSection,
+  VisitStudioSection,
+  WorkingHoursSection,
+  LocationDirectionsSection,
+  SocialConnectionsSection,
+  BeforeContactSection,
+  CommunicationExpectationsSection,
+  ContactFaqSection,
+  EmergencyRequestsSection,
+  FinalConsultationCtaSection,
 } from "../../components/contact";
 
 const Contact = () => {
@@ -11,14 +21,44 @@ const Contact = () => {
       {/* Contact hero */}
       <ContactHeroSection />
 
-      {/* Contact channels */}
-      <ContactChannelsSection />
+      {/* Preferred communication methods */}
+      <PreferredMethodsSection />
 
-      {/* Inquiry and process */}
-      <ContactInquirySection />
+      {/* WhatsApp consultation */}
+      <WhatsAppConsultationSection />
 
-      {/* Assurance strip */}
-      <ContactAssuranceStrip />
+      {/* Phone consultation */}
+      <PhoneConsultationSection />
+
+      {/* Email communication */}
+      <EmailCommunicationSection />
+
+      {/* Visit studio */}
+      <VisitStudioSection />
+
+      {/* Working hours */}
+      <WorkingHoursSection />
+
+      {/* Location and directions */}
+      <LocationDirectionsSection />
+
+      {/* Social connections */}
+      <SocialConnectionsSection />
+
+      {/* Before contact checklist */}
+      <BeforeContactSection />
+
+      {/* Communication expectations */}
+      <CommunicationExpectationsSection />
+
+      {/* Contact FAQs */}
+      <ContactFaqSection />
+
+      {/* Emergency requests */}
+      <EmergencyRequestsSection />
+
+      {/* Final consultation CTA */}
+      <FinalConsultationCtaSection />
     </main>
   );
 };

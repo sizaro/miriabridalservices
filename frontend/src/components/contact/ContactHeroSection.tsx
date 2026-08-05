@@ -1,50 +1,67 @@
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { MessageCircle, PhoneCall } from "lucide-react";
 import { Link } from "react-router-dom";
+
+import { contactConfig } from "./contactConfig";
 
 const ContactHeroSection = () => {
   return (
-    <motion.section
-      initial={{ opacity: 0, y: 24 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6 }}
-      className="bg-[#f7efe8] py-20"
-    >
-      <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:px-8 lg:items-center">
-        <div>
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#8b5e3c]">
-            Contact us
-          </p>
-          <h1 className="mt-4 text-4xl font-semibold leading-tight text-stone-900 sm:text-5xl">
-            Let us plan your bridal beauty experience with clarity and care.
+    <section className="relative overflow-hidden py-20 sm:py-24">
+      <img
+        src="https://images.unsplash.com/photo-1515169067868-5387ec356754?auto=format&fit=crop&w=1800&q=80"
+        alt="Bridal consultation at Miriam Bridal Services studio"
+        className="absolute inset-0 h-full w-full object-cover"
+      />
+      <div className="absolute inset-0 bg-gradient-to-r from-stone-950/75 via-stone-950/55 to-stone-950/30" />
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"
+      >
+        <div className="max-w-3xl">
+          <span className="inline-flex rounded-full border border-white/30 bg-white/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-[#f1e1cf]">
+            Contact hub
+          </span>
+          <h1 className="mt-5 text-4xl font-semibold leading-tight text-white sm:text-5xl">
+            Let&apos;s Begin Your Bridal Journey Together.
           </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-8 text-stone-600">
-            Tell us about your celebration and we will guide you to the right
-            service plan. Whether you need full bridal beauty support or a
-            custom event package, our team is ready to help.
+          <p className="mt-6 text-lg leading-8 text-stone-200">
+            Every beautiful bridal experience begins with a conversation.
+            Whether you need wedding styling, packages, training support,
+            partnerships, or planning advice, our team is ready to help.
           </p>
-          <div className="mt-8 flex flex-wrap gap-4">
+
+          <div className="mt-8 flex flex-wrap gap-3">
             <a
-              href="mailto:hello@miriabridalservices.com"
-              className="inline-flex items-center gap-2 rounded-full bg-stone-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-stone-700"
+              href={contactConfig.whatsappUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-stone-900 transition hover:bg-stone-200"
             >
-              Send an email <ArrowRight className="h-4 w-4" />
+              Chat on WhatsApp <MessageCircle className="h-4 w-4" />
+            </a>
+            <a
+              href={contactConfig.phoneDialer}
+              className="inline-flex items-center gap-2 rounded-full border border-white/60 bg-transparent px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+            >
+              Call the studio <PhoneCall className="h-4 w-4" />
             </a>
             <Link
-              to="/packages"
-              className="inline-flex items-center rounded-full border border-stone-300 bg-white px-6 py-3 text-sm font-semibold text-stone-800 transition hover:border-stone-400"
+              to="/services"
+              className="inline-flex items-center rounded-full border border-white/60 bg-transparent px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
             >
-              Review package options
+              Explore services
             </Link>
           </div>
+
+          <p className="mt-5 text-sm font-medium text-stone-200">
+            Professional responses. Personal care. Every inquiry is valued.
+          </p>
         </div>
-        <img
-          src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80"
-          alt="Bridal consultation notes and planning"
-          className="h-[460px] w-full rounded-[2rem] object-cover shadow-md"
-        />
-      </div>
-    </motion.section>
+      </motion.div>
+    </section>
   );
 };
 

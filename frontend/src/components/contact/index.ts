@@ -1,4 +1,14 @@
 export { default as ContactHeroSection } from "./ContactHeroSection";
-export { default as ContactChannelsSection } from "./ContactChannelsSection";
-export { default as ContactInquirySection } from "./ContactInquirySection";
-export { default as ContactAssuranceStrip } from "./ContactAssuranceStrip";
+export { default as PreferredMethodsSection } from "./PreferredMethodsSection";
+export { default as WhatsAppConsultationSection } from "./WhatsAppConsultationSection";
+export { default as PhoneConsultationSection } from "./PhoneConsultationSection";
+export { default as EmailCommunicationSection } from "./EmailCommunicationSection";
+export { default as VisitStudioSection } from "./VisitStudioSection";
+export { default as WorkingHoursSection } from "./WorkingHoursSection";
+export { default as LocationDirectionsSection } from "./LocationDirectionsSection";
+export { default as SocialConnectionsSection } from "./SocialConnectionsSection";
+export { default as BeforeContactSection } from "./BeforeContactSection";
+export { default as CommunicationExpectationsSection } from "./CommunicationExpectationsSection";
+export { default as ContactFaqSection } from "./ContactFaqSection";
+export { default as EmergencyRequestsSection } from "./EmergencyRequestsSection";
+export { default as FinalConsultationCtaSection } from "./FinalConsultationCtaSection";
